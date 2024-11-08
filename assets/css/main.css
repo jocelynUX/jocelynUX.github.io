@@ -3005,7 +3005,7 @@ input, select, textarea {
 
 		.spotlights > section > .image {
 			background-position: center center;
-			background-size: cover;
+			background-size: contain;
 			border-radius: 0;
 			display: block;
 			position: relative;
@@ -3085,8 +3085,15 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 1680px) {
+    #aboutme {
+      padding: 1em;
+    }
 
+    .spotlights > section > .image {
+      border-radius: 50em;
+    }
+    
+		@media screen and (max-width: 1680px) {
 			.spotlights > section > .content {
 				padding: 4em 4em 2em 4em ;
 			}
@@ -3096,7 +3103,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.spotlights > section {
-				display: block;
+				display: block;  
 			}
 
 				.spotlights > section > .image {
