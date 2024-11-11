@@ -3914,3 +3914,19 @@ input, select, textarea {
 			}
 
 		}
+
+.projimage {
+	object-fit: contain;
+	height: 15em;
+	width: 15em;
+}
+.features > section.process-list {
+	padding: 1em 2em;
+	ul {
+		margin: 0;
+	}	
+
+}
+.features >section.process-list.full-width {
+	width: 100%;
+}
