@@ -2017,7 +2017,7 @@ input, select, textarea {
 	.features section.project.top {
 		padding-bottom: 0;
 	}
-	.flowchart {
+	img.flowchart {
 		width: 100%;
 	}
 	.features section.project {
