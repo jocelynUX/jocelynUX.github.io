@@ -118,7 +118,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #4A4E69;
 		font-family: 'Noto Sans', serif;
-		font-size: 16.5pt;
+		font-size: 14pt;
 		font-weight: normal;
 		line-height: 1.75;
 	}
@@ -126,7 +126,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -134,7 +134,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 11pt;
 			}
 
 		}
@@ -142,7 +142,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 10pt;
 			}
 
 		}
@@ -1991,30 +1991,42 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.2);
 		margin: 0 0 2em 0;
 	}
+	.project-flex {
+		display: flex;
+	}
 
 	.features section {
-		padding: 2em 2.5em;
+		padding: 1.5em 3em;
 		border-top: solid 1px rgba(255, 255, 255, 0.15);
 		position: relative;
+		.dataviz {
+			padding: 1.5em 0;
+		}
 		.projimage {
 			float: left;
-			padding: 0 1em;
+			padding: 0 2em 0 0;
 			background-color: transparent;
 		}
 		.projimage.urbangems {
 			float: right;
 		}
-		ul {
-			justify-content: space-between;
-		}
+	}
+	.features section.project.top > h2 {
+		margin-bottom: 0;	
+	}
+	.features section.project.top {
+		padding-bottom: 0;
+	}
+	.flowchart {
+		width: 100%;
 	}
 	.features section.project {
 		/* order: 1; */
-		padding: 1.5em;
+		padding: 1.5em 3em;
 		/* flex-grow: 1; */
 		width: 50%;
 		flex-shrink: 3;
-		align-content: center;
+		align-content: flex-start;
 		ul, ol, li {
 			list-style-type: none;
 			margin: 0;
@@ -2026,32 +2038,44 @@ input, select, textarea {
 		img {
 			width: 100%;
 		}
+
+		
 	}
+	
 	@media screen and (max-width: 980px) {
 		/* .features {
 			display: block;
 		} */
-		/* .features section {
-			border-top-width: 1px !important;
-			border-left-width: 0 !important;
-			width: 100%;
+		.features section.project {
+			/* border-top-width: 1px !important;
+			border-left-width: 0 !important; */
+			padding: 1.5em 3em;
+			width: 50%;
 			.projimage {
 				width: 100%;
 				margin: 1em 0;
-			} */
-		/* } */
-		.features section:first-child {
-			border-top-width: 0 !important;
+			} 
+			projimage.map {
+				width: 100vw;
+			}
 		}
+		/* .features section:first-child {
+			border-top-width: 0 !important;
+		} */
 	}
 
 	@media screen and (max-width: 736px) {
 		.features {
 			display: block;
 		}
-		/* .features section {
+		.features section {
 			padding: 1.5em 2.5em;
-		} */
+			width: 100%;
+			.projimage {
+				width: 100%;
+				margin: 1em 0;
+			} 
+		}
 			.features section .icon {
 				left: 1.5em;
 				top: 2em;
@@ -3046,12 +3070,18 @@ input, select, textarea {
 			clip-path: circle();
 		}
 	}
+	section > div.content > {
+		img {
+			width: 100%;			
+		}
+	}
 	
 	@media screen and (max-width: 1680px) {
 		section > div.content.intro {
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
+			/* h1, h3 { */
 			h1 {
 				width: 100%;
 				flex-grow: 1;
@@ -3061,6 +3091,13 @@ input, select, textarea {
 				width: 70%;
 				flex-grow: 1;
 				margin: 0 2em;
+			}
+		}
+		section > div.content > {
+			img {
+				width: 70%;
+				flex-grow: 1;
+				margin: 0 2em;				
 			}
 		}
 	}
@@ -3079,6 +3116,13 @@ input, select, textarea {
 				width: 70%;
 				flex-grow: 1;
 				margin: 0 2em;
+			}
+		}
+		section > div.content > {
+			img {
+				width: 70%;
+				flex-grow: 1;
+				margin: 0 2em;				
 			}
 		}
 	}
@@ -3117,6 +3161,16 @@ input, select, textarea {
 			-ms-flex: 1;
 		}
 
+		.features section a.button.scrolly {
+			margin: 1.5em 0 0 0
+		}
+
+		/* .spotlights > section > .content.image {
+			width: 40em;
+		}
+		.spotlights > section > .content.projcontent {
+			width: 60em;
+		} */
 			.spotlights > section > .content > .inner {
 				-moz-transform: translateX(0) translateY(0);
 				-webkit-transform: translateX(0) translateY(0);
@@ -3157,7 +3211,7 @@ input, select, textarea {
 	
 	@media screen and (max-width: 1680px) {
 		.spotlights > section > .content {
-			padding: 2em 4em ;
+			padding: 1em 2em;
 		}
 		.video iframe {
 			height: 400px;
@@ -3186,9 +3240,9 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-		.spotlights > section > .image {
+		/* .spotlights > section > .image {
 			min-height: 15em;
-		}
+		} */
 		.spotlights > section > .content {
 			padding: 1em 2em;
 		}
@@ -3992,13 +4046,14 @@ div.tableauPlaceholder {
 
 .projimage {
 	object-fit: contain;
-	height: 15em;
-	h3, p {
+	/* width: 100%; */
+	max-height: 20em;
+	 p {
 		display: inline-block;
 	}
 }
 .features > section.process-list {
-	padding: 1em 2em;
+	padding: 1em 3em;
 	ul {
 		margin: 0;
 	}	
