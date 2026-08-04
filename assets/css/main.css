@@ -33,10 +33,6 @@ body {
 	line-height: 1;
 }
 
-.content a {
-	margin: 1.5em 0 0;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -2007,9 +2003,13 @@ input, select, textarea {
 			padding: 1.5em 0;
 		}
 		.projimage {
+			float: left;
+			padding: 0 2em 0 0;
 			background-color: transparent;
 		}
-
+		.projimage.urbangems {
+			float: right;
+		}
 	}
 	.features section.project.top > h2 {
 		margin-bottom: 0;	
@@ -2043,6 +2043,9 @@ input, select, textarea {
 	}
 	
 	@media screen and (max-width: 980px) {
+		/* .features {
+			display: block;
+		} */
 		.features section.project {
 			/* border-top-width: 1px !important;
 			border-left-width: 0 !important; */
@@ -2065,7 +2068,7 @@ input, select, textarea {
 		.features {
 			display: block;
 		}
-		.features section.project {
+		.features section {
 			padding: 1.5em 2.5em;
 			width: 100%;
 			.projimage {
@@ -2081,11 +2084,14 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 480px) {
-		.features section .icon {
-			left: 0;
-			position: relative;
-			top: 0;
-		}
+		/* .features section {
+			padding: 2em 1.5em 0.1em 1.5em ;
+		} */
+			.features section .icon {
+				left: 0;
+				position: relative;
+				top: 0;
+			}
 	}
 
 			.features section:nth-child(-n + 2) {
@@ -3056,15 +3062,12 @@ input, select, textarea {
 			width: 25em;
 		}
 
-	.welcome {
+	section > div.content.intro {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		img {
+		a.photo > img {
 			width: 100%;
 			clip-path: circle();
-			max-width: 20em;
 		}
 	}
 	section > div.content > {
@@ -3072,16 +3075,24 @@ input, select, textarea {
 			width: 100%;			
 		}
 	}
-	.projimage {
-		object-fit: contain;
-		width: 100%;
-		max-height: 20em;
-		 p {
-			display: inline-block;
-		}
-	}
 	
 	@media screen and (max-width: 1680px) {
+		section > div.content.intro {
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			/* h1, h3 { */
+			h1 {
+				width: 100%;
+				flex-grow: 1;
+				text-align: center;
+			}
+			a.photo {
+				width: 70%;
+				flex-grow: 1;
+				margin: 0 2em;
+			}
+		}
 		section > div.content > {
 			img {
 				width: 70%;
@@ -3092,6 +3103,21 @@ input, select, textarea {
 	}
 	
 	@media screen and (max-width: 980px) {
+		section > div.content.intro {
+			justify-content: center;
+			align-items: center;
+			flex-wrap: nowrap;
+			h1 {
+				width: 100%;
+				flex-grow: 1;
+				text-align: center;
+			}
+			a.photo {
+				width: 70%;
+				flex-grow: 1;
+				margin: 0 2em;
+			}
+		}
 		section > div.content > {
 			img {
 				width: 70%;
@@ -3117,24 +3143,34 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.spotlights > section > .content, section.portfolio-project {
+		.spotlights > section > .content {
+			padding: 4em 5em 2em 5em ;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
-			flex-wrap: wrap;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
+			width: 50em;
 			-ms-flex: 1;
-			align-items: flex-start;
 		}
 
 		.features section a.button.scrolly {
 			margin: 1.5em 0 0 0
 		}
 
+		/* .spotlights > section > .content.image {
+			width: 40em;
+		}
+		.spotlights > section > .content.projcontent {
+			width: 60em;
+		} */
 			.spotlights > section > .content > .inner {
 				-moz-transform: translateX(0) translateY(0);
 				-webkit-transform: translateX(0) translateY(0);
@@ -3174,9 +3210,8 @@ input, select, textarea {
 	}
 	
 	@media screen and (max-width: 1680px) {
-		.portfolio-project > .content, .welcome .content  {
-			width: 50%;
-			padding: 2em;
+		.spotlights > section > .content {
+			padding: 1em 2em;
 		}
 		.video iframe {
 			height: 400px;
@@ -3185,10 +3220,6 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 980px) {
-		.portfolio-project > .content, .welcome .content {
-			width: 50%;
-			padding: 2em 1em;
-		}
 		.video iframe {
 			height: 100%;
 			padding: 0;
@@ -3196,9 +3227,11 @@ input, select, textarea {
 		.spotlights > section {
 			display: block;  
 		}
+		.spotlights > section > .content {
+			width: 100%;
+		}
 		.spotlights > section.inactive > .content > .inner,
-		body.is-preload .spotlights > section > .content > .inner,
-		body.is-preload .spotlights > .inner > section > .content > .inner {
+		body.is-preload .spotlights > section > .content > .inner {
 			-moz-transform: translateY(1em);
 			-webkit-transform: translateY(1em);
 			-ms-transform: translateY(1em);
@@ -3207,10 +3240,11 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-
-		.portfolio-project > .content, .welcome .content {
-			width: 100%;
-			padding: 1em;
+		/* .spotlights > section > .image {
+			min-height: 15em;
+		} */
+		.spotlights > section > .content {
+			padding: 1em 2em;
 		}
 	}
 
@@ -3335,7 +3369,7 @@ div.tableauPlaceholder {
 			background-color: #261c3e;
 		}
 
-		.wrapper.style1 {
+		.wrapper.style1, .wrapper.style2 {
 			background-color: #f2e9e4;
 			h1, p {
 				color: #4A4E69;
@@ -4010,7 +4044,14 @@ div.tableauPlaceholder {
 
 		}
 
-
+.projimage {
+	object-fit: contain;
+	/* width: 100%; */
+	max-height: 20em;
+	 p {
+		display: inline-block;
+	}
+}
 .features > section.process-list {
 	padding: 1em 3em;
 	ul {
@@ -4020,4 +4061,131 @@ div.tableauPlaceholder {
 }
 .features >section.process-list.full-width {
 	width: 100%;
+}
+
+.capabilities-intro {
+  max-width: 52rem;
+  margin-bottom: 2.5rem;
+}
+
+.capabilities-intro p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.capability-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.capability-card__content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.capability-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.capability-card h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.capability-card p {
+  line-height: 1.7;
+}
+
+.capability-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.capability-list li {
+  margin-bottom: 0.4rem;
+  padding-left: 0.2rem;
+  line-height: 1.55;
+}
+
+.capability-list li:last-child {
+  margin-bottom: 0;
+}
+
+.capability-example {
+  padding: 1.5rem 2rem 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.capability-example p {
+  margin-bottom: 1rem;
+}
+
+.capability-example__label {
+  margin-bottom: 0.5rem !important;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.capability-link {
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.capability-link:hover,
+.capability-link:focus {
+  border-bottom-color: transparent;
+}
+
+/* Tablet and mobile */
+
+@media screen and (max-width: 980px) {
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .capabilities-intro {
+    margin-bottom: 1.75rem;
+  }
+
+  .capabilities-grid {
+    gap: 1rem;
+  }
+
+  .capability-card__content {
+    padding: 1.5rem;
+  }
+
+  .capability-example {
+    padding: 1.25rem 1.5rem 1.5rem;
+  }
+
+  .capability-card h3 {
+    font-size: 1.2rem;
+  }
 }
