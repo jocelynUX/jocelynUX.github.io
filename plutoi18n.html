@@ -1,14 +1,13 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	-->
 <html>
 <head>
-	<title>Jocelyn Gonzalez</title>
+	<title>Pluto VR Localization Workflow | Jocelyn Gonzalez</title>
+	<meta
+	name="description"
+	content="How Jocelyn Gonzalez researched, implemented, and documented a production localization workflow for Pluto VR using React, FormatJS, Lokalise, Storybook, and human translation."
+	/>
 	<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,143 +25,629 @@
 		</nav>
 	</header>
 	
-	<!-- Wrapper -->
-	<div id="wrapper">
-	  <!-- Main -->
-	  <section id="main" class="wrapper">
-		<div class="inner">
-		<h1 class="major">Scaling Localization & Internationalization for Pluto VR</h1>
-		
-		<section>
-			<div class="features">
-				<section class="project" style="flex-grow: 3;">
-					<h2>Project Overview</h2>
-					<p>
-					Pluto VR needed a scalable and developer-friendly workflow to expand our reach as we engaged with worldwide VR users.
-					</p>
-				</section>
-				<section class="project" style="flex-grow: 1;">
-					<h2>Role</h2>
-					<p>
-						Led research, tool selection, and implementation to create a scalable, developer-friendly localization workflow for a React.js project.
-					</p>
-				</section>	
-			</div>
-			<div class="features">
-				<section class="project">
-					<h2>The Challenge</h2>
-					<ul>
-						<li>
-							<span>🛠</span> Technical Compatibility: Needed a TMS and i18n library that worked with React.js.
-						</li>
-						<li>
-							<span>🌍</span> Translation Accuracy: Poor machine translations required manual review.
-						</li>
-						<li>
-							<span>📄</span> Developer Accuracy: Prior process required duplicate entries in each translation file and subjective JSON hierarchy structure of phrases.
-						</li>
-						<li>
-							<span>🏗</span> Developer Training: Engineers lacked familiarity with localization best practices.
-						</li>
-						<li>
-							<span>🔍</span> UI Context for Translators: Without UI previews, translations lacked accuracy.
-						</li>
-					</ul>
-				</section>
-				<section class="project">
-					<img src="images/translation challenges.png" alt="Image of developer panicking over duplication of translation phrases">
-				</section>	
-			</div>
-			<div class="features">
-				<section class="project top">
-					<h2>Process</h2>
-				</section>
-				<section class="project top"></section>
-				<section class="project">
-					<h3>Step 1. Research & Tool Selection</h3>
-					<p>Compare translation management service (TMS) options</p>
-					<img src="images/TMS notes.png" alt="notes for TMS">
-					<p>Review translation services</p>
-					<img src="images/estimate.png" alt="Translations quote">
-					<p><em>Quote of translation costs</em></p>
-				</section>
-				<section class="project">
-					<h3>Step 2. Implementing & Testing Localization</h3>
-					<img src="images/storybook.png" alt="Screenshot of Storybook translating English to Korean">
-					<p><em>Screenshot of login page localization using Storybook</em></p>
-				</section>
-				<section class="project docs">
-					<h3>Step 3. Documentation & Training</h3>
-					<figure>
-						<figcaption>Types of Documentation Created</figcaption>
-							<ul>
-								<li>✅ Translation Flow</li>
-								<li>✅ Translation Task Creations</li>
-								<li>✅ Translator/Developer Guide to Using Storybook</li>
-							</ul>
-					</figure>
-				</section>
-				<section class="project">
-					<img src="images/documentation.png" alt="Sample of training documentation">
-					<p><em>Documentation to help translators find visual context for phrases</em></p>
-				</section>
-			</div>
+<!-- Wrapper -->
+<div id="wrapper">
+  <main id="main" class="wrapper case-study-page">
+    <div class="inner case-study-inner">
 
-			<div class="features">
-				<section class="project">
-					<h2>Outcomes</h2>
-					<ul>
-						<li>
-							✅ Faster localization process with seamless TMS integration
-						</li>
-						<li>
-							✅ Automates updates to JSON translation files through formatjs
-						</li>
-						<li>
-							✅ Improved translation accuracy through translator training & UI previews
-						</li>
-						<li>✅ Engineers onboarded 2x faster with structured documentation & training
-						</li>
-					</ul>
-				</section>
-				<section class="project">
-					<img src="images/translation unique keys.png" alt="Graphic featuring formatjs unique key creation">
-					<p><em>Formatjs updates translation files by creating a unique key and phrase pair</em></p>
-				</section>
-				<section>
-					<img src="images/processflowchart.png" class="flowchart" alt="Graph featuring new translation process flowchart">
-					<p><em>New flowchart process enables automated processes that hand off responsibilities of code and translations.</em></p>
-				</section>
-			</div>
-			<div class="features">	
-				<section>
-					<h2>Key Takeaways</h2>
-					<ul>
-						<li>
-							Good localization is not just technical—it requires translator context & collaboration
-						</li>
-						<li>
-							Training and documentation are critical for adoption in cross-functional teams
-						</li>
-						<li>
-							A structured research approach (vendor evaluation, usability testing) ensures better tool selection
-						</li>
-					</ul>
-				</section>
-			</div>
-		</section>
-	</div>
+      <!-- Case-study introduction -->
+      <header class="case-study-hero">
+        <p class="case-study-eyebrow">
+          Pluto VR · Localization and Internationalization
+        </p>
 
+        <h1>
+          Building Pluto VR’s Production Localization Workflow
+        </h1>
 
-	<!-- Footer -->
-	<footer id="footer" class="wrapper alt">
-	  <div class="inner">
-		<ul class="menu">
-		  <li>&copy; jocelynUX. All rights reserved.</li>
-		  <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-		</ul>
-	  </div>
-	</footer>
+        <p class="case-study-lede">
+          Pluto VR needed a more maintainable way to localize its React
+          product. Developers were manually maintaining translation files,
+          while translators did not always have enough context to understand
+          where a phrase appeared in the interface. I compared
+          translation-management systems and linguist services, then chose
+          Lokalise because it fit our product and the way the team worked. I
+          helped put the workflow into production and used Korean as our first
+          real test before we expanded to other languages.
+        </p>
+
+        <ul
+          class="case-study-tags"
+          aria-label="Capabilities demonstrated in this project"
+        >
+          <li>Localization &amp; i18n</li>
+          <li>Tool evaluation</li>
+          <li>Workflow design</li>
+          <li>Technical implementation</li>
+          <li>Documentation</li>
+        </ul>
+      </header>
+
+      <!-- Strongest visual -->
+      <figure class="case-study-hero-artifact">
+        <img
+          src="images/storybook.png"
+          alt="English and Korean versions of a Pluto VR interface displayed in Storybook"
+        />
+
+        <figcaption>
+          I used Storybook to check the Korean translation in the actual
+          interface and give the linguist more context than a list of isolated
+          strings could provide.
+        </figcaption>
+      </figure>
+
+      <!-- At a glance -->
+      <aside
+        class="case-study-glance"
+        aria-labelledby="at-a-glance-heading"
+      >
+        <h2 id="at-a-glance-heading">At a Glance</h2>
+
+        <dl class="glance-grid">
+          <div>
+            <dt>Role</dt>
+            <dd>
+              Research, tool evaluation, workflow design, technical
+              implementation, testing, and documentation
+            </dd>
+          </div>
+
+          <div>
+            <dt>Context</dt>
+            <dd>
+              A production localization workflow for Pluto VR’s
+              React-based product
+            </dd>
+          </div>
+
+          <div>
+            <dt>Collaborators</dt>
+            <dd>
+              Software engineers and an in-house Korean linguist
+            </dd>
+          </div>
+
+          <div>
+            <dt>Tools</dt>
+            <dd>
+              React, FormatJS, Storybook, Lokalise, and JSON translation
+              files
+            </dd>
+          </div>
+
+          <div class="glance-grid__wide">
+            <dt>Responsibilities</dt>
+            <dd>
+              Compare translation-management systems and linguist
+              services; evaluate a React-compatible internationalization
+              approach; select Lokalise; test the production workflow in
+              Korean; use Storybook for interface context; clarify handoffs;
+              and create process documentation
+            </dd>
+          </div>
+
+          <div class="glance-grid__wide">
+            <dt>Constraints</dt>
+            <dd>
+              Duplicate translation-file maintenance, inconsistent phrase
+              organization, limited localization experience on the team, and
+              translators needing more context about where text appeared in
+              the product
+            </dd>
+          </div>
+
+          <div class="glance-grid__wide">
+            <dt>Result</dt>
+            <dd>
+              A production workflow that connected the code, Lokalise,
+              human translation and review, Storybook, and clearer guidance
+              for the people using the process
+            </dd>
+          </div>
+        </dl>
+      </aside>
+
+      <!-- Local case-study navigation -->
+      <nav class="case-study-nav" aria-label="Case study sections">
+        <a href="#problem">Problem</a>
+        <a href="#evaluation">Evaluation</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#decisions">Decisions</a>
+        <a href="#contribution">My Contribution</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#learning">Learning</a>
+      </nav>
+
+      <!-- Problem -->
+      <section id="problem" class="case-study-section">
+        <div class="case-study-section__heading">
+          <p class="section-number">01</p>
+          <h2>The Problem Was Bigger Than Choosing a Translation Tool</h2>
+        </div>
+
+        <div class="case-study-prose">
+          <p>
+            Our existing process put a lot of manual work on developers.
+            Phrases had to be maintained across translation files, and the
+            JSON structure depended on individual decisions about where each
+            phrase belonged. That made the process harder to keep consistent
+            as the interface changed.
+          </p>
+
+          <p>
+            Translators had a different problem. A phrase that makes sense on
+            its own can mean something different once it appears on a button,
+            dialog, or screen. They needed a way to see more of that context,
+            while engineers needed clearer guidance for preparing and handing
+            off translatable text.
+          </p>
+
+          <p>
+            The problem was bigger than finding a translation tool. We needed
+            a process that connected the code, the translation files, the
+            linguist, the interface, and the people responsible for keeping it
+            all working.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <article>
+            <h3>Too much manual maintenance</h3>
+            <p>
+              Developers were maintaining duplicate entries and making
+              individual decisions about how translation files were organized.
+            </p>
+          </article>
+
+          <article>
+            <h3>Not enough context</h3>
+            <p>
+              Translators could see the text without always seeing where or
+              how it appeared in the product.
+            </p>
+          </article>
+
+          <article>
+            <h3>A process people could repeat</h3>
+            <p>
+              Engineers needed a workflow they could follow without already
+              knowing the details of localization.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Evaluation -->
+      <section id="evaluation" class="case-study-section">
+        <div class="case-study-section__heading">
+          <p class="section-number">02</p>
+          <h2>Finding a Tool That Fit the Team</h2>
+        </div>
+
+        <div class="case-study-prose">
+          <p>
+            I compared translation-management systems and external linguist
+            services. Cost mattered, but the options were fairly comparable,
+            and I no longer have the exact pricing. What mattered more was
+            whether the tool worked with our React setup and made sense for how
+            engineers and translators needed to work together.
+          </p>
+
+          <p>
+            Lokalise fit the project and team best. We also already had an
+            in-house Korean linguist through a Korean government-supported
+            program, so Korean gave us a practical first language for testing
+            the workflow. Instead of working only with sample strings, we could
+            see how the process held up with a real linguist and real product
+            content.
+          </p>
+        </div>
+
+        <div class="criteria-grid">
+          <article class="criteria-card">
+            <h3>React compatibility</h3>
+            <p>
+              Would it work with the product architecture we already had?
+            </p>
+          </article>
+
+          <article class="criteria-card">
+            <h3>String management</h3>
+            <p>
+              Could it reduce duplicate manual work and keep source phrases
+              more consistent?
+            </p>
+          </article>
+
+          <article class="criteria-card">
+            <h3>Developer usability</h3>
+            <p>
+              Could engineers repeat the process without needing to become
+              localization specialists?
+            </p>
+          </article>
+
+          <article class="criteria-card">
+            <h3>Translator context</h3>
+            <p>
+              Could the linguist understand where text appeared and what it was
+              doing in the interface?
+            </p>
+          </article>
+
+          <article class="criteria-card">
+            <h3>Human review</h3>
+            <p>
+              Did the workflow leave room for a person to make language
+              decisions instead of relying on machine translation alone?
+            </p>
+          </article>
+
+          <article class="criteria-card">
+            <h3>Team fit</h3>
+            <p>
+              Would this actually work with how our team worked, and would it
+              still be manageable after the initial setup?
+            </p>
+          </article>
+        </div>
+
+        <figure class="case-study-artifact">
+          <img
+            src="images/TMS notes.png"
+            alt="Research notes comparing translation-management system options"
+            loading="lazy"
+          />
+
+          <figcaption>
+            Notes from my comparison of translation-management options and the
+            questions I was using to think through technical fit, workflow, and
+            translation support.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Workflow -->
+      <section id="workflow" class="case-study-section">
+        <div class="case-study-section__heading">
+          <p class="section-number">03</p>
+          <h2>Redesigning the Developer-Translator Handoff</h2>
+        </div>
+
+        <div class="workflow-comparison">
+          <article class="workflow-panel workflow-panel--before">
+            <p class="workflow-label">Before</p>
+            <h3>Manual and harder to maintain</h3>
+
+            <ol>
+              <li>
+                A developer added or changed interface copy.
+              </li>
+              <li>
+                The developer maintained phrases across translation files.
+              </li>
+              <li>
+                The developer decided where phrases belonged in the JSON
+                structure.
+              </li>
+              <li>
+                Translated text was produced or reviewed separately from
+                the interface.
+              </li>
+              <li>
+                Translators had limited visual context.
+              </li>
+              <li>
+                Corrections were communicated back to development.
+              </li>
+            </ol>
+          </article>
+
+          <article class="workflow-panel workflow-panel--after">
+            <p class="workflow-label">Production workflow</p>
+            <h3>Connected and easier to follow</h3>
+
+            <ol>
+              <li>
+                Engineers prepared translatable interface text through
+                the internationalization implementation.
+              </li>
+              <li>
+                FormatJS generated or updated the relevant keys and source
+                phrases.
+              </li>
+              <li>
+                Translation content moved into Lokalise.
+              </li>
+              <li>
+                Our Korean linguist completed and reviewed translations.
+              </li>
+              <li>
+                Storybook displayed translated interface states.
+              </li>
+              <li>
+                Engineers verified the implementation and incorporated
+                adjustments.
+              </li>
+              <li>
+                Documentation explained tasks, responsibilities, and
+                interface context.
+              </li>
+            </ol>
+          </article>
+        </div>
+
+        <figure class="case-study-artifact case-study-artifact--wide">
+          <img
+            src="images/processflowchart.png"
+            alt="Flowchart showing responsibilities and handoffs in the revised localization process"
+            loading="lazy"
+          />
+
+          <figcaption>
+            The production workflow made it clearer how work moved between
+            engineering, Lokalise, the linguist, and interface review, and
+            where human judgment was still needed.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Decisions -->
+      <section id="decisions" class="case-study-section">
+        <div class="case-study-section__heading">
+          <p class="section-number">04</p>
+          <h2>Decisions That Shaped the Workflow</h2>
+        </div>
+
+        <div class="decision-grid">
+          <article class="decision-card">
+            <p class="decision-card__label">Decision 1</p>
+            <h3>Choose for fit, not just price</h3>
+            <p>
+              The options were fairly comparable in cost. Lokalise won out
+              because it fit our React project and the way engineers and
+              translation work needed to connect.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <p class="decision-card__label">Decision 2</p>
+            <h3>Use Korean as a real first test</h3>
+            <p>
+              Because we already had an in-house Korean linguist, Korean was a
+              practical first language for testing the production workflow with
+              real product content before adding more languages.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <p class="decision-card__label">Decision 3</p>
+            <h3>Automation could not replace context</h3>
+            <p>
+              FormatJS and Lokalise could move strings through the process, but
+              they could not tell us whether a translation made sense on the
+              actual screen. Storybook and human review filled that gap.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <p class="decision-card__label">Decision 4</p>
+            <h3>Documentation was part of the workflow</h3>
+            <p>
+              Working code was not enough. Engineers and the linguist needed
+              clear instructions for creating tasks, finding interface context,
+              and handing work off to each other.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contribution -->
+      <section id="contribution" class="case-study-section">
+        <div class="case-study-section__heading">
+          <p class="section-number">05</p>
+          <h2>My Contribution</h2>
+        </div>
+
+        <div class="case-study-prose">
+          <p>
+            My part of the project crossed several areas. I researched the
+            options, selected Lokalise, worked with FormatJS and Storybook,
+            tested the production workflow with our Korean linguist, mapped the
+            handoffs between engineering and translation, and wrote the
+            documentation the team needed to keep using the process.
+          </p>
+        </div>
+
+        <div class="contribution-grid">
+          <article>
+            <h3>Research</h3>
+            <ul>
+              <li>Compared TMS and linguist-service options</li>
+              <li>Identified the technical and human requirements</li>
+              <li>Looked at cost, workflow fit, and maintenance</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Engineering</h3>
+            <ul>
+              <li>Evaluated the React internationalization approach</li>
+              <li>Worked with FormatJS and translation files</li>
+              <li>Tested localized interface states in Storybook</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Operations</h3>
+            <ul>
+              <li>Mapped responsibilities and handoffs</li>
+              <li>Defined a repeatable translation sequence</li>
+              <li>Connected engineering and translation work</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Enablement</h3>
+            <ul>
+              <li>Created developer and linguist documentation</li>
+              <li>Explained translation-task creation</li>
+              <li>Documented how to find visual context in Storybook</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Evidence -->
+      <section id="evidence" class="case-study-section">
+        <div class="case-study-section__heading">
+          <p class="section-number">06</p>
+          <h2>Evidence and Artifacts</h2>
+        </div>
+
+        <div class="artifact-grid">
+          <figure class="case-study-artifact">
+            <img
+              src="images/translation unique keys.png"
+              alt="Diagram showing a source phrase associated with a generated translation key"
+              loading="lazy"
+            />
+
+            <figcaption>
+              FormatJS gave us a more consistent way to connect source
+              phrases with translation keys instead of having developers
+              manually maintain duplicate entries.
+            </figcaption>
+          </figure>
+
+          <figure class="case-study-artifact">
+            <img
+              src="images/documentation.png"
+              alt="Documentation explaining how translators could locate interface context in Storybook"
+              loading="lazy"
+            />
+
+            <figcaption>
+              I wrote documentation showing the linguist how to find the
+              right Storybook state so they could see where a phrase appeared
+              in the product.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Outcomes -->
+      <section id="outcomes" class="case-study-section">
+        <div class="case-study-section__heading">
+          <p class="section-number">07</p>
+          <h2>What Changed</h2>
+        </div>
+
+        <ul class="outcome-list">
+          <li>
+            A production localization workflow built around Lokalise, FormatJS,
+            and Storybook
+          </li>
+          <li>
+            A Korean-language production test before expanding to additional
+            languages
+          </li>
+          <li>
+            Clearer handoffs between engineers and translation work
+          </li>
+          <li>
+            Documentation the team could use to repeat the process
+          </li>
+        </ul>
+
+        <div class="case-study-note">
+          <p>
+            I do not have reliable measurements for time saved or onboarding
+            speed, so I would rather describe what changed concretely. The team
+            had a working production process, the linguist had more interface
+            context, and engineers had clearer instructions for moving
+            localization work through the system.
+          </p>
+        </div>
+      </section>
+
+      <!-- Learning -->
+      <section id="learning" class="case-study-section">
+        <div class="case-study-section__heading">
+          <p class="section-number">08</p>
+          <h2>What I Learned</h2>
+        </div>
+
+        <div class="learning-grid">
+          <article>
+            <h3>Localization involves more than translation</h3>
+            <p>
+              I came away from this project thinking less about localization as
+              a translation step and more as a workflow. The code, the TMS, the
+              linguist, the interface, and the documentation all affected
+              whether it actually worked.
+            </p>
+          </article>
+
+          <article>
+            <h3>The best tool was the one that fit the team</h3>
+            <p>
+              The options were fairly comparable in cost. What mattered more
+              was whether the tool fit our React setup and the way engineers and
+              translation work needed to connect.
+            </p>
+          </article>
+
+          <article>
+            <h3>Starting with one language gave us something real to test</h3>
+            <p>
+              Using Korean first let us see how the whole production workflow
+              behaved with real content and a real linguist before adding more
+              languages and more coordination.
+            </p>
+          </article>
+
+          <article>
+            <h3>Documentation was part of the implementation</h3>
+            <p>
+              The process was not really finished if only I understood how it
+              worked. The documentation was part of making the workflow usable
+              by the rest of the team.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Closing -->
+      <section class="case-study-closing">
+        <p class="case-study-eyebrow">What I took from the project</p>
+
+        <h2>
+          No single tool solved the localization problem.
+        </h2>
+
+        <p>
+          What I liked about this project was that no single part of it was
+          enough on its own. The code had to work, the linguist needed context,
+          engineers needed a process they could follow, and the documentation
+          had to make sense after the initial setup was done.
+        </p>
+
+        <p>
+          That is the kind of work I tend to be drawn to: figuring out how the
+          people, tools, and processes around a product fit together, then
+          making the system easier to use and maintain.
+        </p>
+
+        <a href="index.html#projects" class="button">
+          Return to selected projects
+        </a>
+      </section>
+
+    </div>
+  </main>
+</div>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
