@@ -3159,6 +3159,7 @@ input, select, textarea {
 			justify-content: center;
 			width: 50em;
 			-ms-flex: 1;
+			flex: 1
 		}
 
 		.features section a.button.scrolly {
