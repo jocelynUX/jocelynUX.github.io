@@ -5,12 +5,12 @@
   	<title>Regional Growth Insights for Pluto VR | Jocelyn Gonzalez</title>
     <meta name="description" content="How Jocelyn Gonzalez explored six months of Pluto VR session data in Tableau, identified international usage patterns, reframed the analysis when the original question changed, and presented findings to company leadership."  />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    < noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <body class="is-preload">
 
@@ -231,9 +231,7 @@
         </p>
 
         <p>
-          I focused on making it easier to compare sessions by country,
-          changes over time, US and non-US activity, countries with
-          noticeably higher usage, and countries with similar patterns.
+          I structured the data so I could compare countries, track changes over time, separate U.S. from non-U.S. activity, and explore countries with higher or similar usage patterns.
         </p>
 
         <p>
@@ -256,7 +254,7 @@
 
         <article>
           <p class="data-prep-label">Separate</p>
-          <h3>US and non-US activity</h3>
+          <h3>U.S. and non-U.S. activity</h3>
         </article>
 
         <article>
@@ -294,8 +292,8 @@
               <div>
                 <h4>What I saw</h4>
                 <p>
-                  The United States accounted for the largest share of
-                  sessions. Once I separated the non-US activity,
+                  The U.S. accounted for the largest share of
+                  sessions. Once I separated the non-U.S. activity,
                   differences between international markets became much
                   easier to see.
                 </p>
@@ -304,9 +302,7 @@
               <div>
                 <h4>What it suggested</h4>
                 <p>
-                  International usage was established enough to justify
-                  examining individual countries rather than treating
-                  all non-US activity as one group.
+                  There was enough non-U.S. activity to make country-level comparisons useful.
                 </p>
               </div>
             </div>
@@ -319,7 +315,7 @@
 
           <div class="finding-card__content">
             <h3>
-              Canada and Germany stood out among non-US countries
+              Canada and Germany stood out among non-U.S. countries
             </h3>
 
             <div class="finding-evidence">
@@ -390,8 +386,7 @@
       <div class="case-study-prose">
         <p>
           My original interest was whether the geographic patterns could
-          support an infrastructure decision. That path eventually
-          closed because of constraints outside the analysis itself.
+          support an infrastructure decision. That path eventually closed because our infrastructure provider couldn't support the provisioning change we were considering.
         </p>
 
         <p>
@@ -401,7 +396,7 @@
 
         <p>
           So I looked again at what it could reasonably tell us.
-          Pluto VR had users outside the US, and some markets were much
+          Pluto VR had users outside the U.S., and some markets were much
           more active than others. If the company later had the resources
           to invest in international growth, those existing patterns could
           help narrow where we might want to learn more first.
@@ -442,14 +437,14 @@
           <p>
             This dashboard shows anonymized PlutoSphere sessions by
             country from February through July 2023. I added filters
-            for month and for US versus non-US activity because the
-            much larger US numbers made the international patterns
+            for month and for U.S. versus non-U.S. activity because the
+            much larger U.S. numbers made the international patterns
             harder to see.
           </p>
 
           <aside class="dashboard-note">
             <strong>What to look for:</strong>
-            Filtering to non-US sessions makes the differences between
+            Filtering to non-U.S. sessions makes the differences between
             countries much clearer. The map shows where activity was
             happening, not why those differences existed.
           </aside>
@@ -457,9 +452,7 @@
 
         <div class="tableau-embed">
           
-			<section id="world-map" class="dataviz">
-				<h3>World Map of Product Usage</h3>
-				<p>Interactive map can be filtered by United States usage, usage by non-US countries, and all countries. In addition, usage can be filtered according to month. <i>Please use desktop for the best interactive experience.</i></p>
+			<section class="dataviz">
 				<div class='tableauPlaceholder' id='viz1731283178789' style='position: relative'><noscript><a href='#'><img alt='Dashboard 7 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;country-usage-ex&#47;Dashboard7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;country-usage-ex&#47;Dashboard7?:language=en-US&amp;:embed=true&amp;publish=yes&amp;:sid=&amp;:redirect=auth' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;country-usage-ex&#47;Dashboard7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1731283178789');                    var vizElement = divElement.getElementsByTagName('object')[0];                   			
 				vizElement.style.width='100%'; if ( divElement.offsetWidth > 800 ) { vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.height='662px';} else { vizElement.style.height='413px';}                 
 				var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
@@ -471,15 +464,6 @@
       <article id="country-cluster" class="dashboard-block">
         <div class="dashboard-block__intro">
           <p class="dashboard-label">Interactive Tableau dashboard</p>
-          <h3>Comparing Country Usage Patterns</h3>
-
-          <p>
-            I used Tableau’s clustering feature to compare usage patterns
-            across countries. Canada and Germany stood out with
-            substantially more session activity than most other non-US
-            markets.
-          </p>
-
           <aside class="dashboard-note">
             <strong>What to look for:</strong>
             The clusters helped me organize patterns already present in
@@ -489,12 +473,11 @@
         </div>
 
         <div class="tableau-embed">
-			<section id="country-cluster" class="dataviz">
-				<h3>Country Cluster Patterns</h3>
-				<p>Interactive cluster map can be filtered by United States usage, usage by non-US countries, and all countries. While the majority of usage is from US users, filtering the map by non-US countries can help to identify future regions to prioritize.</p>
-				<div class='tableauPlaceholder' id='viz1731283539890' style='position: relative'><noscript><a href='#'><img alt='Dashboard Patterns ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CountryUsageClusters&#47;DashboardPatterns&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CountryUsageClusters&#47;DashboardPatterns' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CountryUsageClusters&#47;DashboardPatterns&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1731283539890');                    var vizElement = divElement.getElementsByTagName('object')[0];              
-				vizElement.style.width='100%'; if ( divElement.offsetWidth > 800 ) { vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.height='662px';} else { vizElement.style.height='413px';}                     
-				var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			    <section class="dataviz">
+				    <div class='tableauPlaceholder' id='viz1731283539890' style='position: relative'><noscript><a href='#'><img alt='Dashboard Patterns ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CountryUsageClusters&#47;DashboardPatterns&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CountryUsageClusters&#47;DashboardPatterns' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CountryUsageClusters&#47;DashboardPatterns&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1731283539890');                    var vizElement = divElement.getElementsByTagName('object')[0];           
+            vizElement.style.width='100%'; if ( divElement.offsetWidth > 800 ) { vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.height='662px';} else { vizElement.style.height='413px';}                     
+				var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
 			</section>
         </div>
       </article>
@@ -562,38 +545,16 @@
 
       <ul class="outcome-list">
         <li>
-          A cleaned view of six months of anonymized session data
+          Analysis: Cleaned and organized six months of anonymized session data into views that made geographic patterns easier to compare.
         </li>
-
         <li>
-          Tableau dashboards for exploring geographic activity over time
+          Findings: Identified Canada and Germany as notable among non-U.S. markets while keeping the limits of that observation explicit.
         </li>
-
         <li>
-          A clearer picture of PlutoSphere usage outside the United States
+          Communication: Built interactive Tableau views and presented the findings to company leadership and engineering.
         </li>
-
         <li>
-          Identification of Canada and Germany as two markets that clearly
-          stood out in the non-US data
-        </li>
-
-        <li>
-          Tableau clusters for comparing country usage patterns
-        </li>
-
-        <li>
-          A different use for the analysis after the original question
-          changed
-        </li>
-
-        <li>
-          Findings shared with the founders and engineering team
-        </li>
-
-        <li>
-          A more focused starting point for future international or
-          localization research
+          Decision support: Reframed the work after the original infrastructure question became infeasible, creating a more focused starting point for future international research.
         </li>
       </ul>
 

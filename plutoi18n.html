@@ -7,7 +7,7 @@
 	content="How Jocelyn Gonzalez researched, implemented, and documented a production localization workflow for Pluto VR using React, FormatJS, Lokalise, Storybook, and human translation."
 	/>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,9 +45,7 @@
           while translators did not always have enough context to understand
           where a phrase appeared in the interface. I compared
           translation-management systems and linguist services, then chose
-          Lokalise because it fit our product and the way the team worked. I
-          helped put the workflow into production and used Korean as our first
-          real test before we expanded to other languages.
+          Lokalise because it fit our product and the way the team worked. I helped put the workflow into production, using Korean as the first real test of a process designed to support additional languages.
         </p>
 
         <ul
@@ -208,7 +206,7 @@
           </article>
 
           <article>
-            <h3>A process people could repeat</h3>
+            <h3>No shared, repeatable process</h3>
             <p>
               Engineers needed a workflow they could follow without already
               knowing the details of localization.
@@ -227,16 +225,13 @@
         <div class="case-study-prose">
           <p>
             I compared translation-management systems and external linguist
-            services. Cost mattered, but the options were fairly comparable,
-            and I no longer have the exact pricing. What mattered more was
+            services. Cost mattered, but the options were broadly comparable. Technical fit and workflow mattered more to the decision. What mattered more was
             whether the tool worked with our React setup and made sense for how
             engineers and translators needed to work together.
           </p>
 
           <p>
-            Lokalise fit the project and team best. We also already had an
-            in-house Korean linguist through a Korean government-supported
-            program, so Korean gave us a practical first language for testing
+            Lokalise fit the project and team best. We already had a Korean linguist working with our team, so Korean gave us a practical first language for testing
             the workflow. Instead of working only with sample strings, we could
             see how the process held up with a real linguist and real product
             content.
@@ -349,15 +344,14 @@
 
             <ol>
               <li>
-                Engineers prepared translatable interface text through
-                the internationalization implementation.
+                Engineers marked interface text for translation using the internationalization implementation.
               </li>
               <li>
                 FormatJS generated or updated the relevant keys and source
                 phrases.
               </li>
               <li>
-                Translation content moved into Lokalise.
+                Source strings were sent to Lokalise for translation..
               </li>
               <li>
                 Our Korean linguist completed and reviewed translations.
@@ -488,7 +482,7 @@
           </article>
 
           <article>
-            <h3>Enablement</h3>
+            <h3>Documentation & Training</h3>
             <ul>
               <li>Created developer and linguist documentation</li>
               <li>Explained translation-task creation</li>
@@ -553,7 +547,7 @@
             languages
           </li>
           <li>
-            Clearer handoffs between engineers and translation work
+            Clearer handoffs between engineering and translation
           </li>
           <li>
             Documentation the team could use to repeat the process
@@ -562,9 +556,7 @@
 
         <div class="case-study-note">
           <p>
-            I do not have reliable measurements for time saved or onboarding
-            speed, so I would rather describe what changed concretely. The team
-            had a working production process, the linguist had more interface
+            The team had a working production process, the linguist had more interface
             context, and engineers had clearer instructions for moving
             localization work through the system.
           </p>
@@ -593,8 +585,7 @@
             <h3>The best tool was the one that fit the team</h3>
             <p>
               The options were fairly comparable in cost. What mattered more
-              was whether the tool fit our React setup and the way engineers and
-              translation work needed to connect.
+              was whether the tool fit our React setup and the way engineering and translation work needed to connect.
             </p>
           </article>
 
